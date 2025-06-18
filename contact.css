@@ -1,0 +1,275 @@
+:root {
+  --primary: #1E88E5;
+  --accent: #FFA726;
+  --text-dark: #333;
+  --bg-light: #F9FAFB;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.contact-header {
+  text-align: center;
+  padding: 1rem 2rem 2rem;
+}
+
+.contact-header h2 {
+  font-size: 32px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* New part image */
+
+.contact-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem; /* center image and space below */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h3 {
+  color: var(--accent);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1565C0;
+}
+
+
+/* New part */
+
+.service-coverage {
+  background-color: #f8faff;
+  padding: 50px 20px;
+  margin-top: 40px;
+  /* border-top: 2px solid #e0e0e0; */
+}
+
+.coverage-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-coverage h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.coverage-intro {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.coverage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.city {
+  background: #e3f0ff;
+  padding: 12px 20px;
+  /* border-radius: 25px; */
+  border-radius: 4px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.city:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+
+
+.map-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map-section h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+
+/* new part */
+
+.contact-highlight-strip {
+  background: linear-gradient(to right, #1E88E5, #42A5F5);
+  color: #fff;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.highlight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.highlight-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.highlight-box h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-box p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cta-highlight {
+  background-color: #fff;
+  color: #1E88E5;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-call {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #FFA726;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Whatsapp Button */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  /* background-color: red; */
+}
+
+.whatsapp-button img {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}

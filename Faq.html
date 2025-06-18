@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Apexy Packers and Movers</title>
+    <link rel="stylesheet" href="faq.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Apexy Packers & Movers</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./quote.html">Get Quote</a>
+            <a href="./testimonial.html">Testimonial</a>
+            <a href="./Blog.html">Our Blog</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./Faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="faq-wrapper">
+        <div class="faq-image">
+            <p class="faq-intro">
+                Got questions? We’ve answered them. Simple. Fast. Reliable.
+            </p>
+            <img src="./images/serviceheader.png" alt="FAQ Illustration" />
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What services do you offer?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">We provide home relocation, office shifting, vehicle transport, warehousing, and
+                    packing/unpacking across India.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How can I get a quote?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">Use the form on our homepage or call/WhatsApp us for a quick and free moving
+                    quote.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are my goods insured?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">Yes, we offer transit insurance to protect your items during transportation.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you offer packing materials?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">Yes, we provide premium packing materials including bubble wrap, cartons, and
+                    stretch film for added protection.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I track my move?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">Absolutely. We provide real-time tracking for your shipment so you can monitor
+                    its progress at every step.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Apexy Packers and Movers. All Rights Reserved.
+    </footer>
+
+
+    <div class="whatsapp-button">
+        <a href="https://wa.me/917050001010" target="_blank" title="Chat with us on WhatsApp">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+        </a>
+    </div>
+
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const icon = item.querySelector('.toggle-icon');
+
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+
+                // Update icon based on state
+                if (item.classList.contains('active')) {
+                    icon.textContent = '×';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

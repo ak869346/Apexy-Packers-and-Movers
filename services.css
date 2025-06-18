@@ -1,0 +1,145 @@
+:root {
+  --primary: #1E88E5;
+  --accent: #FFA726;
+  --text-dark: #333;
+  --bg-light: #F9FAFB;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.services-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.services-header h2 {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.service-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.service-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  /* border: 3px solid var(--accent); */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.service-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.cta-section {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Whatsapp Button */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  /* background-color: red; */
+}
+
+.whatsapp-button img {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
