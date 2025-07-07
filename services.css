@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
@@ -66,7 +66,7 @@ nav a:hover {
   padding: 2rem;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
@@ -77,8 +77,8 @@ nav a:hover {
   border-radius: 50%;
   margin-bottom: 1rem;
   /* border: 3px solid var(--accent); */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-   display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,3 +143,146 @@ footer {
   transform: scale(1.1);
 }
 
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1E88E5;
+}
+
+/* Responsivness part */
+
+/* Tablets & Small Desktops (<= 992px) */
+@media (max-width: 992px) {
+  .services-list {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .service-card {
+    width: 45%;
+  }
+
+  .services-header h2 {
+    font-size: 28px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+  }
+
+  .cta-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+  }
+}
+
+/* Tablets & Large Phones (<= 768px) */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 106px;
+    left: 146px;
+    width: 60%;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    flex-direction: row;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    padding: 15px;
+    /* border-top: 1px solid #eee; */
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .services-header h2 {
+    font-size: 24px;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 1.5rem 1rem;
+  }
+
+  .whatsapp-button img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .services-header h2 {
+    font-size: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .service-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cta-button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}

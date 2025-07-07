@@ -59,7 +59,8 @@ nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 1rem; /* center image and space below */
+  margin: 0 auto 1rem;
+  /* center image and space below */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -272,4 +273,261 @@ footer {
 
 .whatsapp-button img:hover {
   transform: scale(1.1);
+}
+
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1E88E5;
+}
+
+
+/* Responsivness part of this page */
+
+/* Tablet & Small Desktops (≤ 992px) */
+@media (max-width: 992px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .highlight-grid {
+    gap: 1.5rem;
+  }
+
+  .highlight-box h3 {
+    font-size: 32px;
+  }
+
+  .highlight-box p {
+    font-size: 15px;
+  }
+
+  .coverage-grid {
+    gap: 12px;
+  }
+
+  .city {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 28px;
+  }
+
+  .contact-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Tablets & Large Phones (≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 106px;
+    left: 146px;
+    width: 60%;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    flex-direction: row;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    padding: 15px;
+    /* border-top: 1px solid #eee; */
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .contact-header {
+    padding: 2rem 1rem;
+  }
+
+  .contact-header h2 {
+    font-size: 24px;
+  }
+
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  .contact-form{
+    margin: auto;
+  }
+
+  .contact-info h3 {
+    text-align: center;
+  }
+
+  .contact-info p {
+    text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .highlight-box h3 {
+    font-size: 26px;
+  }
+
+  .highlight-box p {
+    font-size: 14px;
+  }
+
+  .coverage-container h2 {
+    font-size: 24px;
+  }
+
+  .coverage-intro {
+    font-size: 14px;
+  }
+
+  .city {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .cta-highlight {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .highlight-call {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+
+  .map-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .map-section h3 {
+    font-size: 20px;
+  }
+
+  .whatsapp-button img {
+    width: 45px;
+    height: 45px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile Phones (≤ 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .contact-header h2 {
+    font-size: 20px;
+  }
+
+  .contact-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .highlight-box h3 {
+    font-size: 22px;
+  }
+
+  .highlight-box p {
+    font-size: 13px;
+  }
+
+  .coverage-container h2 {
+    font-size: 20px;
+  }
+
+  .coverage-intro {
+    font-size: 13px;
+  }
+
+  .city {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .cta-highlight {
+    padding: 1rem;
+  }
+
+  .highlight-call {
+    padding: 0.4rem 0.7rem;
+    font-size: 13px;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .contact-form button {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .map-section h3 {
+    font-size: 18px;
+  }
+
+  .whatsapp-button img {
+    width: 40px;
+    height: 40px;
+  }
 }
